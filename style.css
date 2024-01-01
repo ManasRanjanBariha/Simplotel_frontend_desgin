@@ -1,0 +1,233 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(90deg, rgba(252,236,188,1) 25%, rgba(252,188,228,1) 100%);
+}
+.navbar{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    background-color:#fc7474 ;
+    flex-direction: row-reverse;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #fc7474;
+}
+.navbar ul li{
+    display: block;
+    
+    cursor: pointer;
+}
+.img-link{
+    width: 90px;
+    height: 50px;
+    cursor: pointer;
+}
+img{
+    width: 100%;
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+    padding: 0 25px;
+    font-size: 1.5rem;
+    letter-spacing: 4px;
+    font-weight: bold;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    justify-content: center;
+}
+.left,.right{
+    flex: 1;
+}
+.left{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: start;
+    gap: 45px;
+    padding: 40px;
+    text-align: left;
+    font-family: sans-serif;
+}
+.left .title{
+    letter-spacing: 10px;
+}
+.title{
+    font-size: 3.5rem;
+    margin: 10px 0;
+    text-align: left;
+    
+}
+.left p{
+    text-align: justify;
+    font-size:1.2rem;
+    margin: 10px 0;
+}
+.left a{
+    text-decoration: none;
+    padding:  20px 100px;
+    background-color: #fc7474;
+    color:white;
+}
+.right{
+    background-image: url('assets/pexels-robin-stickel-70497.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+.p-4{
+    padding:50px;
+}
+.left-holder,.right-holder{
+    width: 100%;
+    height: 100%;
+}
+.left-holder{
+    padding: 50px;
+    display: flex;
+
+}
+.col,.row{
+    flex:1;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+.row{
+    background-image: url("assets/pexels-mister-mister-3434523.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+.top{
+    padding: 20px;
+    background-image: url("assets/pexels-rachel-claire-6752433.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    
+    margin: 0 30px 10px ;
+}
+.buttom{
+    padding: 20px;
+    background-image: url("assets/pexels-eva-bronzini-6141651.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    margin: 10px 30px 0;
+}
+.right-holder{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-family: sans-serif;
+    justify-content: start;
+    align-items: center;
+    /* margin-right: 100px; */
+}
+.card{
+    background-color: #fc7474;
+    padding: 15px 30px;
+}
+.card p{
+    font-size: 1.2rem;
+}
+.card .title{
+    letter-spacing: 8px;
+    display: inline-block;
+}
+.card a{
+    text-decoration: none;
+    color:black;
+    font-size: 1.2rem;
+}
+.img-link img{
+    width: 100%;
+}
+#arrow{
+    padding: 0;
+    display: inline-block;
+    height: 22px;
+    width: 30px;
+    background-image: url('assets/icons8-arrow-30.png');
+}
+
+@media only screen and (max-width: 1024px) {
+    .navbar{
+        flex-direction: column;
+    }
+    .navbar ul{
+        display: none;
+        flex-direction: column;
+
+        /* justify-content: center; */
+    }
+    .navbar ul li{
+        padding: 10px 0;
+    }
+    .navbar{
+        justify-content: left;
+    }
+    .container{
+        flex-direction: column;
+        gap:10px;
+    }
+    .left{
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+        padding: 20px;
+        text-align: left;
+        font-family: sans-serif;
+    }
+    .left-holder{
+        padding: 0;
+        padding-bottom: 20px;
+        width: 100%;
+        gap: 10px;
+        justify-content: space-between;
+    }
+    .col{
+        padding: 0;
+        align-items: start;
+        width: 100%;
+        flex: 1;
+        margin: 0;
+        gap:10px;
+    }
+    .top,.buttom{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .row{
+        width: 100%;
+    }
+    .p-4{
+        padding: 10px;
+        gap:10px;
+    }
+    .navbar ul li{
+        border-bottom: 1px solid whitesmoke;
+    }
+    .title{
+        margin:5px 0;
+    }
+}
